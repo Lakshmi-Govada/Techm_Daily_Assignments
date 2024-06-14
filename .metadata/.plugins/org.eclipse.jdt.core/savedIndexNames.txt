@@ -32,7 +32,6 @@ INDEX VERSION 1.134+D:\Daily Assignments\.metadata\.plugins\org.eclipse.jdt.core
 2214579119.index
 2030158230.index
 2823733327.index
-1104649673.index
 3633953172.index
 3327842889.index
 2381148034.index
