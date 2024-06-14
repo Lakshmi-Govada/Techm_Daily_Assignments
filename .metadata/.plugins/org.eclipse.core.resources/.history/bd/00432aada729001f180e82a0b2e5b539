@@ -1,0 +1,48 @@
+package com.jdbc;
+
+import java.sql.*;
+
+public class OracleConnection {
+    public static void main(String[] args) {
+        // JDBC URL, username, and password
+        String jdbcUrl = "jdbc:oracle:thin:@localhost:1521:xe";
+        String username = "your_username";
+        String password = "your_password";
+
+        try {
+            // Load Oracle JDBC driver
+            Class.forName("oracle.jdbc.driver.OracleDriver");
+
+            // Establish connection to the database
+            Connection connection = DriverManager.getConnection(jdbcUrl, username, password);
+
+            // SQL query to retrieve records from the employees table
+            String sqlQuery = "SELECT * FROM employees";
+
+            // Create a statement for executing SQL queries
+            Statement statement = connection.createStatement();
+
+            // Execute the SQL query and get the result set
+            ResultSet resultSet = statement.executeQuery(sqlQuery);
+
+            // Iterate through the result set and print the records
+            while (resultSet.next()) {
+                int id = resultSet.getInt("id");
+                String name = resultSet.getString("name");
+                String department = resultSet.getString("department");
+
+                System.out.println("ID: " + id + ", Name: " + name + ", Department: " + department);
+            }
+
+            // Close the result set, statement, and connection
+            resultSet.close();
+            statement.close();
+            connection.close();
+        } catch (ClassNotFoundException e) {
+            System.out.println("Oracle JDBC driver not found.");
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+}

@@ -1,0 +1,18 @@
+package com.streamsapi;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class UppercaseStrings {
+    public static void main(String[] args) {
+        List<String> strings = Arrays.asList("apple", "banana", "cherry", "date", "elderberry");
+
+        List<String> uppercaseStrings = strings.stream()
+                                               .map(String::toUpperCase)
+                                               .collect(Collectors.toList());
+
+        System.out.println("Uppercase strings:");
+        System.out.println(uppercaseStrings);
+    }
+}

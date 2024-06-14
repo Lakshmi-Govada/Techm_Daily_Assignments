@@ -1,0 +1,19 @@
+package com.javabasedcongiguration;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+import com.java.based.configuration.*;
+import com.java.based.configuration.*;
+
+@Configuration
+@ComponentScan(basePackages = "com.techm")
+public class MyConfig {
+
+	/*
+	 * @Bean public Student getStudent() { return new Student(); }
+	 * 
+	 * @Bean public Address getAddress() { return new Address(); }
+	 */
+}

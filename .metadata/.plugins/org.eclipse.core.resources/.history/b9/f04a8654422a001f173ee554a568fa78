@@ -1,0 +1,5 @@
+package com.querymethods;
+
+public class SpringDataJpaQueryMethods {
+
+}

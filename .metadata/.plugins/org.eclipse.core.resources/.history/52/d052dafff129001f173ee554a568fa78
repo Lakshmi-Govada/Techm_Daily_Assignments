@@ -1,0 +1,7 @@
+package com.repository;
+
+package com.example;
+
+public interface UserRepository {
+    void saveUser(User user);
+}

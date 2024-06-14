@@ -1,0 +1,7 @@
+/*Implement a Java program using HashMap to store and retrieve student names and their corresponding marks. 
+Print the names and marks of all students.*/
+package com.collections;
+
+public class MapCollection {
+
+}

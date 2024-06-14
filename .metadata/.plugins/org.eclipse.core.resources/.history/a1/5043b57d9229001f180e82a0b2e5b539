@@ -1,0 +1,15 @@
+package com.accessspecifier2;
+
+package com.otherpackage;
+
+import com.example.Person;
+
+public class Employee extends Person {
+    public void printInfo() {
+        // Accessing age from subclass
+        System.out.println("Age: " + age);
+        
+        // Accessing address from subclass
+        System.out.println("Address: " + address);
+    }
+}

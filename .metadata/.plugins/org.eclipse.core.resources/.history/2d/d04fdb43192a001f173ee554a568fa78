@@ -1,0 +1,20 @@
+package com.techm.bytype_autowiring;
+
+import java.util.List;
+import java.util.Map;
+
+public class Student {
+	
+	
+	private Address address;
+	
+	//setter method
+	
+	//getter method
+
+	public String toString()
+	{
+		return  " " + address;
+	}
+	
+}

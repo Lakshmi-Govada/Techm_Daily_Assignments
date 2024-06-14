@@ -1,0 +1,9 @@
+package com.techm;
+
+
+
+public class UserService {
+    public void displayServiceInfo() {
+        System.out.println("UserService is running...");
+    }
+}

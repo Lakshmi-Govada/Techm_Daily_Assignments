@@ -1,0 +1,20 @@
+package com.repository;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class MainApp {
+    public static void main(String[] args) {
+        // Load the Spring application context
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+
+        // Retrieve the UserService bean
+        UserService userService = (UserService) context.getBean("userService");
+
+        // Retrieve the User bean
+        User user = (User) context.getBean("user");
+
+        // Use the UserService bean
+        userService.saveUser(user);
+    }
+}

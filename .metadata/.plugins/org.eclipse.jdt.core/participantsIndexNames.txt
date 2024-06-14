@@ -1,0 +1,11 @@
+INDEX VERSION 1.134
+D:\Daily Assignments\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\114706107.index
+\Servlets-Jsp\src\main\java
+D:\Daily Assignments\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1326442128.index
+\Servlet\src\main\java
+D:\Daily Assignments\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1613286339.index
+\JSP\src\main\java
+D:\Daily Assignments\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3303079139.index
+\Spring-MVC\src\main\resources
+D:\Daily Assignments\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4208514434.index
+\Spring-ORM\src\main\resources

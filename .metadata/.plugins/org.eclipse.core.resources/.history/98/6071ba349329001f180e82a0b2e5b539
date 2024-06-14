@@ -1,0 +1,36 @@
+/*Define a Java class Person with instance variables name (private), age (protected), and address
+(protected). Provide getter and setter methods for name and demonstrate accessing age and 
+address from a subclass in a different package.*/
+package com.accessspecifier1;
+
+
+public class Person {
+    private String name;
+    protected int age;
+    protected String address; // Default access modifier
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    protected int getAge() {
+        return age;
+    }
+
+    protected void setAge(int age) {
+        this.age = age;
+    }
+
+    String getAddress() {
+        return address;
+    }
+
+    void setAddress(String address) {
+        this.address = address;
+    }
+}
+
